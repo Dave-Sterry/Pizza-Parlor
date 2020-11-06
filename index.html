@@ -10,47 +10,45 @@
 <body>
   <div class="container">
     <form id="new-pizza">
-      <div class="row">
-        <div class="col-12">
-          <label for="size">What Size Pizza?</label>
-          <select class="form-control" id="size">
-            <option selected disabled hidden style='display: none' value="0"></option>
-            <option value="12">Small</option>
-            <option value="16">Medium</option>
-            <option value="20">Large</option>
-          </select>
+      <h3>Choose your size</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Small">
+            Small
+          </label>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <label for="topping1">Topping 1</label>
-          <select class="form-control" id="topping1">
-            <option selected disabled hidden style='display: none' value="0"></option>
-            <option value="1">Pepperoni</option>
-            <option value="1">Olives</option>
-            <option value="1">Green Peppers</option>
-          </select>
-        </div> 
-        <div class="col-4">
-          <label for="topping2">Topping 2</label>
-          <select class="form-control" id="topping2">
-            <option selected disabled hidden style='display: none' value="0"></option>
-            <option value="1">Pepperoni</option>
-            <option value="1">Olives</option>
-            <option value="1">Green Peppers</option>
-          </select>
-        </div> 
-        <div class="col-4">
-          <label for="topping3">Topping 3</label>
-          <select class="form-control" id="topping3">
-            <option selected disabled hidden style='display: none' value= "0"></option>
-            <option value="1">Pepperoni</option>
-            <option value="1">Olives</option>
-            <option value="1">Green Peppers</option>
-          </select>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Medium">
+            Medium
+          </label>
         </div>
-        <button type="submit" class="btn">Submit!</button> 
-      </div>  
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="Large">
+            Large
+          </label>
+        </div>
+        <h3>Choose Your Topping</h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="topping" value="Pepperoni">
+            Pepperoni
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="topping" value="Olives">
+            Olives
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="topping" value="Onion">
+            Onions
+          </label>
+        </div>
+        <button type="submit" class="btn">Submit!</button>   
       </form>
   </div>
   
