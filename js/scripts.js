@@ -56,7 +56,6 @@ function displayOrder(orderToDisplay) {
 
 
 //User Interface Logic 
-
 let newZa = new Order();
 
 $(document).ready(function () {

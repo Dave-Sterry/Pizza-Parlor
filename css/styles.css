@@ -3,11 +3,26 @@
 }
 
 body { 
-  background-color: red;
-  font-family: "Abriil Fatface";
+  background-color: tan;
+  font-family: "Abril-Fatface"
 }
 
 .jumbotron {
   font-family: "Abril Fatface";
+}
 
+.card {
+  font-family: "Abril Fatface";
+}
+
+.btn-primary {
+  background-color: teal;
+  color:black;
+  font-family: "Abril FatFace";
+  padding: 10px;
+  margin:10px;
+}
+
+.btn-primary:hover{
+  background-color:tomato;
 }

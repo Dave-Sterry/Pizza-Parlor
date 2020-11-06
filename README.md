@@ -20,6 +20,7 @@ The site can be viewed [here](insert gh pages link)
 ## Known Bugs
 Order totals would not update (fixed on 11/06/20)
 Order would not display on page (fixed on 11/06/20)
+If reset button is clicked it only clears radio buttons, not Order
 ## Specs
 | Test | Input | Output |
 |:-------------|:-------------------------| :--------------|
