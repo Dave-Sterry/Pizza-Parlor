@@ -9,46 +9,56 @@
 </head>
 <body>
   <div class="container">
+    <div class ="jumbotron">
+      <h1>Welcome to Old Roberto's Pizza</h1>
+    </div>
     <form id="new-pizza">
-      <h3>Choose your size</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="Small">
-            Small
-          </label>
+      <div class="row">
+        <div class="col-6">
+        <h3>Choose your size</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Small">
+              Small
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Medium">
+              Medium
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="Large">
+              Large
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="Medium">
-            Medium
-          </label>
+        <div class="col-6">
+          <h3>Choose Your Topping</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="topping" value="Pepperoni">
+              Pepperoni
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="topping" value="Olives">
+              Olives
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="topping" value="Onion">
+              Onions
+            </label>
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="size" value="Large">
-            Large
-          </label>
-        </div>
-        <h3>Choose Your Topping</h3>
-        <div class="radio">
-          <label>
-            <input type="radio" name="topping" value="Pepperoni">
-            Pepperoni
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="topping" value="Olives">
-            Olives
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="topping" value="Onion">
-            Onions
-          </label>
-        </div>
+      </div>
         <button type="submit" class="btn">Submit Order!</button>   
+        <button type='reset' name="button" class="btn">Reset Order</button>
     </form>
     <p>Your Order is</p>
     <ul id="pizzas"></ul>
