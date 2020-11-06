@@ -69,6 +69,5 @@ $(document).ready(function () {
     newPizza.toppingCost(newPizza);
     newZa.addPizza(newPizza);
     displayOrder(newZa);
-    console.log(newZa.pizzas);
   })
 })

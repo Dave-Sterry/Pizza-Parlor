@@ -1,11 +1,11 @@
 # TITLE 
 <img src="https://github.com/Dave-Sterry.png" width="200px" height="auto">
 
-### A website by David Sterry updated on -----
+### A website by David Sterry updated on 11/6/2020
 
-## Description
+## Pizza Parlor
 
-_Insert Descrption_
+_This is a simple website for a pizza parlor. It allows the user to select between three sizes, and three toppings. It will return the users order, and the total cost and display that information on the page. This was a Friday independent project for Epicodus to demonstrate knowledge of constructors and prototypes_
 
 The site can be viewed [here](insert gh pages link)
 
@@ -18,7 +18,8 @@ The site can be viewed [here](insert gh pages link)
 5. Open the _index.html_ file to view the site locally
 
 ## Known Bugs
-There are no known bugs at this time
+Order totals would not update (fixed on 11/06/20)
+Order would not display on page (fixed on 11/06/20)
 ## Specs
 | Test | Input | Output |
 |:-------------|:-------------------------| :--------------|
@@ -53,6 +54,8 @@ _Please contact me at sterry.david@gmail.com in regards to this website_
 * Git
 * Bootstrap
 * Visual Studios Code
+* jQuery and Javascript
+
 
 # License
 
