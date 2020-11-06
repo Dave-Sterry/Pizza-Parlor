@@ -5,6 +5,7 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:ital,wght@1,700&display=swap" rel="stylesheet">
   <title>Placeholder</title> 
 </head>
 <body>
@@ -19,19 +20,19 @@
           <div class="radio">
             <label>
               <input type="radio" name="size" value="Small">
-              Small
+              Small $12
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="Medium">
-              Medium
+              Medium $16
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="size" value="Large">
-              Large
+              Large $20
             </label>
           </div>
         </div>
@@ -40,35 +41,41 @@
           <div class="radio">
             <label>
               <input type="radio" name="topping" value="Pepperoni">
-              Pepperoni
+              Pepperoni $2
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="topping" value="Olives">
-              Olives
+              Olives $1
             </label>
           </div>
           <div class="radio">
             <label>
               <input type="radio" name="topping" value="Onion">
-              Onions
+              Onions $2
             </label>
           </div>
         </div>
       </div>
-        <button type="submit" class="btn">Submit Order!</button>   
-        <button type='reset' name="button" class="btn">Reset Order</button>
+        <button type="submit" class="btn-primary">Submit Order!</button>   
+        <button type='reset' name="button" class="btn-primary">Reset Order</button>
     </form>
-    <p>Your Order is</p>
-    <ul id="pizzas"></ul>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Your Order is:</h3>
+        <ul id="pizzas"></ul>
     
 
-    <div id="show-order">
-      <p>Your Size:<span class="size"></span></p>
-      <p>Your Topping:<span class="topping"></span></p>
-      <p>Your Price:<span class="price"></span></p>
+        <div id="show-order">
+          <p>Your Size:<span class="size"></span></p>
+          <p>Your Topping:<span class="topping"></span></p>
+          <p>Your Price:<span class="price"></span></p>
+        </div>
+      </div>
     </div>
+    
+    
   </div>  
 </body>
 </html>
