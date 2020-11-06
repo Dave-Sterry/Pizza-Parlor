@@ -1,7 +1,6 @@
 // Business Logic for Order
 function Order() {
   this.pizzas = [];
-  this.orderTotal = 0;
   this.currentId = 0;
 }
 
@@ -14,6 +13,7 @@ Order.prototype.assignId = function () {
   this.currentId += 1;
   return this.currentId;
 }
+
 
 // Business Logic for Pizza
 function Pizza(size, topping) {
@@ -54,9 +54,10 @@ $(document).ready(function () {
     const inputtedSize = $("input:radio[name=size]:checked").val();
     const inputtedTopping = $("input:radio[name=topping]:checked").val();
     let newPizza = new Pizza(inputtedSize, inputtedTopping);
-    newZa.addPizza(newPizza);
     newPizza.sizeCost(newPizza);
     newPizza.toppingCost(newPizza);
-    console.log(newPizza);
+    
+    newZa.addPizza(newPizza);
+    console.log(newZa);
   })
 })

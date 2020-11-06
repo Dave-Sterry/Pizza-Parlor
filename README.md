@@ -37,8 +37,11 @@ Example: Pizza(size).toEqual("large");
 Test: Should correctly return users selected topping
 Example: Pizza(toppings).toEqual("Pepperoni)
 
-Test: Should correctly add up total price
-Example: Cost(Large, Pepperoni).toEqual($20)
+Test: Should correctly return size cost
+Example: sizeCost(Large).toEqual($20)
+
+Test: Should correctly return topping cost
+Example: toppingCost(Onion).toEqual(2)
 ## Contact and Support details
 
 _Please contact me at sterry.david@gmail.com in regards to this website_
