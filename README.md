@@ -26,7 +26,7 @@ There are no known bugs at this time
 | Should correctly return size of pizza the user chose | Large | "Large Pizza |
 | Topping Selection Verification |||
 | Should correctly return toppings user chose | Pepperoni | "Pepperoni |
-| Should correctly return multiplie toppings if choosen | Pepperoni, Olives | Pepperoni, Olives |
+| Should correctly return multiple toppings if choosen | Pepperoni, Olives | Pepperoni, Olives |
 | Pricing Calculation |||
 | Should correctly add size and toppings prices for total | Large Pepperoni | $20 |
 
