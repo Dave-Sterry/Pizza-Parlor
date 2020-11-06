@@ -13,9 +13,6 @@ Order.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 }
-Order.prototype.pizzaCost = function add() {
-  return size + topping1 + topping2 + topping3;
-}
 
 
 // Business Logic for Pizza
@@ -24,7 +21,13 @@ function Pizza(size, topping1, topping2, topping3) {
   this.topping1 = topping1;
   this.topping2 = topping2;
   this.topping3 = topping3;
+  this.cost = 0;
 }
+Pizza.prototype.pizzaCost = function add(size, topping1, topping2, topping3) {
+  let total = size + topping1 + topping2 + topping3
+  this.cost.push(total);
+}
+console.log(Pizza);
 
 //User Interface Logic 
 let newZa = new Order();
@@ -41,4 +44,3 @@ $(document).ready(function() {
     console.log(newZa.pizzas);
   })
 })
-
