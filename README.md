@@ -19,9 +19,26 @@ The site can be viewed [here](insert gh pages link)
 
 ## Known Bugs
 There are no known bugs at this time
+## Specs
+| Test | Input | Output |
+|:-------------|:-------------------------| :--------------|
+| Pizza Size Selection Verifictaion |||
+| Should correctly return size of pizza the user chose | Large | "Large Pizza |
+| Topping Selection Verification |||
+| Should correctly return toppings user chose | Pepperoni | "Pepperoni |
+| Should correctly return multiplie toppings if choosen | Pepperoni, Olives | Pepperoni, Olives |
+| Pricing Calculation |||
+| Should correctly add size and toppings prices for total | Large Pepperoni | $20 |
 
-Specs 
+Describe: pizzaSize()
+Test: Should correctly return users selected pizza size
+Example: pizzaSize(size).toEqual("large");
 
+Test: Should correctly return users selected topping
+Example: pizzaToppings(toppings).toEqual("Pepperoni)
+
+Test: Should correctly add up total price
+Example: totalCost(Large, Pepperoni).toEqual($20)
 ## Contact and Support details
 
 _Please contact me at sterry.david@gmail.com in regards to this website_
