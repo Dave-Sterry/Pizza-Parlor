@@ -21,6 +21,7 @@ function Pizza(size, topping) {
   this.topping = topping;
   this.cost = 0
 }
+
 Pizza.prototype.sizeCost = function () {
   let size = this.size;
   if (size === "Small") {
@@ -43,6 +44,16 @@ Pizza.prototype.toppingCost = function () {
   }
 }
 
+function displayOrder(orderToDisplay) {
+  let orderlist = $("ul#pizzas");
+  let htmlForOrderInfo = "";
+  orderToDisplay.pizzas.forEach(function(pizza) {
+    htmlForOrderInfo += "<li id=" + "You Ordered a" + pizza.id + ">"
+ + pizza.size + "with " + pizza.topping + "Total Cost is" + pizza.cost + "</li>";
+  });
+  orderlist.html(htmlForOrderInfo);
+}
+
 
 //User Interface Logic 
 
@@ -56,8 +67,8 @@ $(document).ready(function () {
     let newPizza = new Pizza(inputtedSize, inputtedTopping);
     newPizza.sizeCost(newPizza);
     newPizza.toppingCost(newPizza);
-    
     newZa.addPizza(newPizza);
-    console.log(newZa);
+    displayOrder(newZa);
+    console.log(newZa.pizzas);
   })
 })
