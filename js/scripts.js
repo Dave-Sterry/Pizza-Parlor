@@ -14,12 +14,12 @@ Order.prototype.assignId = function() {
   return this.currentId;
 }
 
-console.log(Order);
+
 // Business Logic for Pizza
-function Pizza(size, topping,) {
+function Pizza(size, topping) {
   this.size = size;
   this.topping = topping;
-  this.cost = 0;
+  this.cost = 0
 }
 Pizza.prototype.sizeCost = function() {
   let size = this.size;
@@ -28,11 +28,17 @@ Pizza.prototype.sizeCost = function() {
   } else if (size === "Medium"){
     this.cost += 16;
   } else if (size === "Large"){
-    this.cost += 20
+    this.cost += 20;
   }
 }
 
+Pizza.prototype.toppingCost = function() {
+  let topping = this.topping;
+    
+}
+
 //User Interface Logic 
+
 let newZa = new Order();
 
 $(document).ready(function() {
@@ -42,6 +48,7 @@ $(document).ready(function() {
     const inputtedTopping = $("input:radio[name=topping]:checked").val();
     let newPizza = new Pizza(inputtedSize, inputtedTopping);
     newZa.addPizza(newPizza);
-    console.log(newZa.pizzas);
+    newPizza.sizeCost(newPizza);
+    console.log(newPizza);
   })
 })
