@@ -23,7 +23,7 @@ There are no known bugs at this time
 | Test | Input | Output |
 |:-------------|:-------------------------| :--------------|
 | Pizza Size Selection Verifictaion |||
-| Should correctly return size of pizza the user chose | Large | "Large Pizza |
+| Should correctly return cost of pizza the user chose | Large | "Large Pizza |
 | Topping Selection Verification |||
 | Should correctly return toppings user chose | Pepperoni | "Pepperoni |
 | Should correctly return multiple toppings if choosen | Pepperoni, Olives | Pepperoni, Olives |
