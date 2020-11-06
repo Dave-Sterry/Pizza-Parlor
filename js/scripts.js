@@ -14,20 +14,23 @@ Order.prototype.assignId = function() {
   return this.currentId;
 }
 
-
+console.log(Order);
 // Business Logic for Pizza
-function Pizza(size, topping1, topping2, topping3) {
+function Pizza(size, topping,) {
   this.size = size;
-  this.topping1 = topping1;
-  this.topping2 = topping2;
-  this.topping3 = topping3;
+  this.topping = topping;
   this.cost = 0;
 }
-Pizza.prototype.pizzaCost = function add(size, topping1, topping2, topping3) {
-  let total = size + topping1 + topping2 + topping3
-  this.cost.push(total);
+Pizza.prototype.sizeCost = function() {
+  let size = this.size;
+  if (size === "Small"){
+    this.cost += 12;
+  } else if (size === "Medium"){
+    this.cost += 16;
+  } else if (size === "Large"){
+    this.cost += 20
+  }
 }
-console.log(Pizza);
 
 //User Interface Logic 
 let newZa = new Order();
@@ -35,11 +38,9 @@ let newZa = new Order();
 $(document).ready(function() {
   $("form#new-pizza").submit(function(event) {
     event.preventDefault();
-    const inputtedSize = parseInt($("#size").val());
-    const inputtedTop1 = parseInt($("#topping1").val());
-    const inputttedTop2 = parseInt($("#topping2").val());
-    const inputtedTop3 = parseInt($("#topping3").val());
-    let newPizza = new Pizza(inputtedSize, inputtedTop1,inputttedTop2,inputtedTop3);
+    const inputtedSize = $("input:radio[name=size]:checked").val();
+    const inputtedTopping = $("input:radio[name=topping]:checked").val();
+    let newPizza = new Pizza(inputtedSize, inputtedTopping);
     newZa.addPizza(newPizza);
     console.log(newZa.pizzas);
   })
