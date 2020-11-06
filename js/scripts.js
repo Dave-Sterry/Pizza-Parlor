@@ -13,11 +13,12 @@ Order.prototype.assignId = function() {
   this.currentId += 1;
   return this.currentId;
 }
-//Order.prototype.pizzaCost = function() {
-  //return size + toppings;
-//}
-// Business Logic for Pizza
+Order.prototype.pizzaCost = function add() {
+  return size + topping1 + topping2 + topping3;
+}
 
+
+// Business Logic for Pizza
 function Pizza(size, topping1, topping2, topping3) {
   this.size = size;
   this.topping1 = topping1;
