@@ -30,15 +30,15 @@ There are no known bugs at this time
 | Pricing Calculation |||
 | Should correctly add size and toppings prices for total | Large Pepperoni | $20 |
 
-Describe: pizzaSize()
+Describe: Pizza()
 Test: Should correctly return users selected pizza size
-Example: pizzaSize(size).toEqual("large");
+Example: Pizza(size).toEqual("large");
 
 Test: Should correctly return users selected topping
-Example: pizzaToppings(toppings).toEqual("Pepperoni)
+Example: Pizza(toppings).toEqual("Pepperoni)
 
 Test: Should correctly add up total price
-Example: totalCost(Large, Pepperoni).toEqual($20)
+Example: Cost(Large, Pepperoni).toEqual($20)
 ## Contact and Support details
 
 _Please contact me at sterry.david@gmail.com in regards to this website_
