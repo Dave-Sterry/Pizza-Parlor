@@ -48,8 +48,8 @@ function displayOrder(orderToDisplay) {
   let orderlist = $("ul#pizzas");
   let htmlForOrderInfo = "";
   orderToDisplay.pizzas.forEach(function(pizza) {
-    htmlForOrderInfo += "<li id=" + "You Ordered a" + pizza.id + ">"
- + pizza.size + "with " + pizza.topping + "Total Cost is" + pizza.cost + "</li>";
+    htmlForOrderInfo += "<li id=" + pizza.id + ">"
+ + pizza.size + " with " + pizza.topping + " , Your Total Cost is $" + pizza.cost + "</li>";
   });
   orderlist.html(htmlForOrderInfo);
 }
