@@ -15,6 +15,7 @@ Order.prototype.assignId = function () {
   return this.currentId;
 }
 
+// Could not get the below code to work before 5
 //Order.prototype.finalCost= function() {
   //let total= 0;
   //this.pizzas.forEach(function(pizza) {

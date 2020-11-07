@@ -7,21 +7,31 @@
 
 _This is a simple website for a pizza parlor. It allows the user to select between three sizes, and three toppings. It will return the users order, and the total cost and display that information on the page. This was a Friday independent project for Epicodus to demonstrate knowledge of constructors and prototypes_
 
-The site can be viewed [here](insert gh pages link)
+The site can be viewed [here](https://dave-sterry.github.io/Pizza-Parlor/)
 
 ## Setup Instructions
-1. User will need to have an up to date browser installed such as Chrome of Firefox
-2. Using the browser navigate to the [gh-pages](gh pages link) for this project
-2. Alternatively use the browser navigate to my GitHub page [respository](portfolio link for this site
-3. Click the Green **Code** button and select **Download Zip**
-4. Unzip the downloaded folder
-5. Open the _index.html_ file to view the site locally
+ User will need to have an up to date browser installed such as Chrome of Firefox
+ # View online :
+1. Using the browser navigate to the [gh-pages](https://dave-sterry.github.io/Pizza-Parlor/) for this project
+## Download via Github:
+1. Alternatively use the browser navigate to my GitHub page [respository](https://github.com/Dave-Sterry/BeepBoop)
+2. Click the Green **Code** button and select **Download Zip**
+3. Unzip the downloaded folder
+4. Open the _index.html_ file to view the site locally
+## Clone from Github via Gitbash:
+1. Clone this repo to your personal computer using "git clone (https://github.com/Dave-Sterry/Pizza-Parlor)
+2. Next navigate to the directory on your computer with the same name, and open via VScode or other code editor of your choice
+3. Open index.html in your browser of choice. 
+## How to use site
+1. Make a pizza size and topping choice
+2. View your total price and order details
 
 ## Known Bugs
-Order totals would not update (fixed on 11/06/20)  
+Pizza price would not update (fixed on 11/06/20)  
 Order would not display on page (fixed on 11/06/20)  
-If reset button is clicked it only clears radio buttons, not Order  
-Order total would not display on page when multiple pizzas ordered  
+If reset button is clicked it only clears radio buttons, not Order-not fixed    
+Order total would not display on page when multiple pizzas ordered- not fixed  
+No selected toppings returns "undefined"- not fixed    
 ## Specs
 | Test | Input | Output |
 |:-------------|:-------------------------| :--------------|
