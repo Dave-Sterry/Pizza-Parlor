@@ -15,26 +15,6 @@ Order.prototype.assignId = function () {
   return this.currentId;
 }
 
-// Could not get the below code to work before 5
-//Order.prototype.finalCost= function() {
-  //let total= 0;
-  //this.pizzas.forEach(function(pizza) {
-    //total += pizza.cost;
-  //})
-  //this.orderTotal = total;
-  //return;
-//}
-
-//function displayTotal(totalToDisplay) {
-  //let totallist = $("ul#total");
-  //let htmlForOrderTotal = "";
-  //totalToDisplay.pizzas.forEach(function(order) {
-    //htmlForOrderTotal += "<li id=" + order.orderTotal + ">"
-    //+ "</li>";
-  //});
-  //totallist.html(htmlForOrderTotal);
-//}
-
 
 // Business Logic for Pizza
 function Pizza(size, topping) {
@@ -88,9 +68,6 @@ $(document).ready(function () {
     newPizza.sizeCost(newPizza);
     newPizza.toppingCost(newPizza);
     newZa.addPizza(newPizza);
-    //newZa.finalCost();
     displayOrder(newZa);
-    //displayTotal(newZa);
-    console.log(newZa);
   })
 })
