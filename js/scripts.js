@@ -1,6 +1,7 @@
 // Business Logic for Order
 function Order() {
   this.pizzas = [];
+  this.orderTotal=0;
   this.currentId = 0;
 }
 
@@ -13,6 +14,25 @@ Order.prototype.assignId = function () {
   this.currentId += 1;
   return this.currentId;
 }
+
+//Order.prototype.finalCost= function() {
+  //let total= 0;
+  //this.pizzas.forEach(function(pizza) {
+    //total += pizza.cost;
+  //})
+  //this.orderTotal = total;
+  //return;
+//}
+
+//function displayTotal(totalToDisplay) {
+  //let totallist = $("ul#total");
+  //let htmlForOrderTotal = "";
+  //totalToDisplay.pizzas.forEach(function(order) {
+    //htmlForOrderTotal += "<li id=" + order.orderTotal + ">"
+    //+ "</li>";
+  //});
+  //totallist.html(htmlForOrderTotal);
+//}
 
 
 // Business Logic for Pizza
@@ -49,7 +69,7 @@ function displayOrder(orderToDisplay) {
   let htmlForOrderInfo = "";
   orderToDisplay.pizzas.forEach(function(pizza) {
     htmlForOrderInfo += "<li id=" + pizza.id + ">"
- + pizza.size + " with " + pizza.topping + " , Your Total Cost is $" + pizza.cost + "</li>";
+ + pizza.size + " with " + pizza.topping + " , Your Pizza Cost is $" + pizza.cost + "</li>";
   });
   orderlist.html(htmlForOrderInfo);
 }
@@ -67,6 +87,9 @@ $(document).ready(function () {
     newPizza.sizeCost(newPizza);
     newPizza.toppingCost(newPizza);
     newZa.addPizza(newPizza);
+    //newZa.finalCost();
     displayOrder(newZa);
+    //displayTotal(newZa);
+    console.log(newZa);
   })
 })

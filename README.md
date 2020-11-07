@@ -18,32 +18,33 @@ The site can be viewed [here](insert gh pages link)
 5. Open the _index.html_ file to view the site locally
 
 ## Known Bugs
-Order totals would not update (fixed on 11/06/20)
-Order would not display on page (fixed on 11/06/20)
-If reset button is clicked it only clears radio buttons, not Order
+Order totals would not update (fixed on 11/06/20)  
+Order would not display on page (fixed on 11/06/20)  
+If reset button is clicked it only clears radio buttons, not Order  
+Order total would not display on page when multiple pizzas ordered  
 ## Specs
 | Test | Input | Output |
 |:-------------|:-------------------------| :--------------|
 | Pizza Size Selection Verifictaion |||
-| Should correctly return cost of pizza the user chose | Large | "Large Pizza |
+| Should correctly return cost of pizza the user chose | Large | "Large Pizza"|
 | Topping Selection Verification |||
-| Should correctly return toppings user chose | Pepperoni | "Pepperoni |
-| Should correctly return multiple toppings if choosen | Pepperoni, Olives | Pepperoni, Olives |
+| Should correctly return toppings user chose | Pepperoni | "Pepperoni" |
 | Pricing Calculation |||
-| Should correctly add size and toppings prices for total | Large Pepperoni | $20 |
+| Should correctly add size and toppings prices for total | Large Pepperoni | $20 |  
+Describe: Pizza()  
+Test: Should correctly return users selected pizza size  
+Example: Pizza(size).toEqual("large");  
 
-Describe: Pizza()
-Test: Should correctly return users selected pizza size
-Example: Pizza(size).toEqual("large");
+Test: Should correctly return users selected topping  
+Example: Pizza(toppings).toEqual("Pepperoni)  
 
-Test: Should correctly return users selected topping
-Example: Pizza(toppings).toEqual("Pepperoni)
+Test: Should correctly return size cost  
+Example: sizeCost(Large).toEqual($20)  
 
-Test: Should correctly return size cost
-Example: sizeCost(Large).toEqual($20)
+Test: Should correctly return topping cost  
+Example: toppingCost(Onion).toEqual(2)  
 
-Test: Should correctly return topping cost
-Example: toppingCost(Onion).toEqual(2)
+
 ## Contact and Support details
 
 _Please contact me at sterry.david@gmail.com in regards to this website_
