@@ -41,6 +41,8 @@ No selected toppings returns "undefined"- not fixed
 | Should correctly return toppings user chose | Pepperoni | "Pepperoni" |
 | Pricing Calculation |||
 | Should correctly add size and toppings prices for total | Large Pepperoni | $20 |  
+
+
 Describe: Pizza()  
 Test: Should correctly return users selected pizza size  
 Example: Pizza(size).toEqual("large");  
