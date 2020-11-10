@@ -10,6 +10,7 @@ body {
 .jumbotron {
   font-family: "Abril Fatface";
   background-image: url("../assets/cheese.jpg");
+  background-size: cover;
   color:white;
 }
 

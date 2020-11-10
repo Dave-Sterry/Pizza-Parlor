@@ -36,47 +36,72 @@
               Large $20
             </label>
           </div>
-          <button type="submit" class="btn-primary">Submit Order!</button> 
         </div>
         <div class="col-6">
-          <h3>Choose Your Topping</h3>
+          <h3>Choose your first topping!</h3>
           <div class="radio">
             <input name="topping" type='hidden' value="0">
             <label>
-              <input type="radio" name="topping" value="Pepperoni">
+              <input type="radio" name="topping1" value="Pepperoni">
               Pepperoni $2
             </label>
           </div>
           <div class="radio">
             <input name="topping" type='hidden' value="0">
             <label>
-              <input type="radio" name="topping" value="Olives">
+              <input type="radio" name="topping1" value="Olives">
               Olives $1
             </label>
           </div>
           <div class="radio">
             <input name="topping" type='hidden' value="0">
             <label>
-              <input type="radio" name="topping" value="Onion">
+              <input type="radio" name="topping1" value="Onion">
               Onions $2
             </label>
           </div>
+        </div>
+      </div>      
+      <div class="row">
+        <div class="col-6">
+          <button type="submit" class="btn-primary">Submit Order!</button> 
           <button type='reset' name="button" class="btn-primary">Reset Selection</button>
         </div>
-      </div>  
+        <div class="col-6">
+        <h3>Choose your second topping!</h3>
+          <div class="radio">
+            <input name="topping" type='hidden' value="0">
+            <label>
+              <input type="radio" name="topping2" value="Pepperoni">
+              Pepperoni $2
+            </label>
+          </div>
+          <div class="radio">
+            <input name="topping" type='hidden' value="0">
+            <label>
+              <input type="radio" name="topping2" value="Olives">
+              Olives $1
+            </label>
+          </div>
+          <div class="radio">
+            <input name="topping" type='hidden' value="0">
+            <label>
+              <input type="radio" name="topping2" value="Onion">
+              Onions $2
+            </label>
+          </div>
+        </div>
+      </div>    
     </form>
+    
     <div class="card">
       <div class="card-body">
         <h3 class="card-title">Your Order is:</h3>
         <ul id="pizzas"></ul>
     
 
-        <!---<ul id="total">Your order total is</ul>---->
-        </div>
-    </div>
-  </div>
     
-    
-  </div>  
+      </div>
+    </div> 
 </body>
 </html>
