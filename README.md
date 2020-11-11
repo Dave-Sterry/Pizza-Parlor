@@ -14,7 +14,7 @@ The site can be viewed [here](https://dave-sterry.github.io/Pizza-Parlor/)
  # View online :
 1. Using the browser navigate to the [gh-pages](https://dave-sterry.github.io/Pizza-Parlor/) for this project
 ## Download via Github:
-1. Alternatively use the browser navigate to my GitHub page [respository](https://github.com/Dave-Sterry/BeepBoop)
+1. Alternatively use the browser navigate to my GitHub page [respository](https://github.com/Dave-Sterry/Pizza-Parlor)
 2. Click the Green **Code** button and select **Download Zip**
 3. Unzip the downloaded folder
 4. Open the _index.html_ file to view the site locally
